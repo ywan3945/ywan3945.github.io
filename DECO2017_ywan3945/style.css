@@ -1,0 +1,489 @@
+    /* set teh background, color and margin of body */
+  body {
+    background: #1F375B; 
+    color: #BCB7B1; 
+    margin: 0;
+  }
+
+    /* the hearde */
+  .head {
+    width: 100%; 
+    height: 132px; 
+    background: #BCB7B1; 
+    text-align: right;
+  }
+
+  /* buttons style */
+  #button-home,
+  #button-list,
+  #button-film {
+    display: inline-block;
+    width: 166px;
+    height: 132px;
+    line-height: 132px;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #203052;
+  }
+    /* the page selected of the header */
+  .head .selected {
+    background: #686664;
+    font-weight: 600;
+    color: #878787;
+  }
+
+  /* home style */
+  .home {
+    text-align: center;
+    direction: rtl;
+  }
+
+  /* the title style in the home page */
+  .home .title {
+    direction: ltr;
+    display: inline-block;
+    width: 500px;
+    margin: 207px 0 0 30px;
+    vertical-align: top;
+    font-family: 'Inter';
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  /* search part, used to input contents */
+  .home .search {
+    direction: ltr;
+    display: inline-block;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 529px;
+    background: #203052;
+    border: 2px solid #B9A5A7;
+  }
+
+  /* search title */
+  .home .text1 {
+    margin-top: 62px;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center; 
+  }
+
+  /* search content */
+  .home .text2 {
+    margin: 55px auto 3px auto;
+    width: 290px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #D9D9D9;
+  }
+
+  /* input content */
+  .home input {
+    display: block;
+    margin: 0 auto;
+    width: 290px;
+    height: 43px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 34px;
+    text-align: center;
+    background: #BCB7B1;
+    color: #354A6B;
+  }
+
+  /* the next button to go to the next page */
+  .home .button {
+    float: right;
+    margin: 64px 38px 43px 0;
+    width: 160px;
+    background: #B9A5A7;
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 54px;
+    color: #354A6B;
+  }
+
+  /* films page */
+  .films {
+    display: none;
+  }
+
+  /* title of the film page after input the content at home page */
+  .films .title {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 132px;
+    color: #203052;
+  }
+
+  /* film page style */
+  .films .film-container {
+    text-align: center;
+    margin: 13px;
+    padding: 22px;
+    background: #203052;
+    border: 2px solid #B9A5A7;
+    border-radius: 30px;
+  }
+
+  /* film style */
+  .film {
+    display: inline-block;
+    margin: 0 25px;
+    text-align: left;
+  }
+
+   /* poster */
+  .films img {
+    width: 200px;
+    height: 292px;
+    left: 42px;
+    top: 176px;
+  }
+
+   /* films' names */
+  .films .film-name {
+    margin-top: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #CFDBF7;
+  }
+
+   /* introduction of background */
+  .films .introduction {
+    padding: 20px 5px 15px 5px;
+    width: 189px;
+    height: 194px;
+    left: 42px;
+    top: 491px;
+    background: #C7C8CC;
+    border-radius: 20px;
+  }
+
+  /* introduction content*/
+  .introduction-text {
+    height: 144px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    overflow: hidden;
+    font-family: 'Inter';
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: #473936;
+  }
+
+   /* score style */
+  .films .score {
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 600;
+    color: #590503;
+  }
+
+   /* star style */
+  .films .star {
+    background: url(images/star.png);
+    background-size: auto 100%;
+    height: 20px;
+    width: 100px;
+  }
+
+   /* add button style */
+  .films .button {
+    margin-top: 17px;
+    width: 200px;
+    height: 33px;
+    border: 3px solid #000000;
+    color: #203052;
+    background: #D9D9D9;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+   /* list style */
+  .list,
+  .detail {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 491px;
+    min-height: 745px;
+    right: 0;
+    top: 87px;
+    background: #E8D2D4;
+    border: 1px solid #000000;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: #203052;
+  }
+
+   /* the style of the movies names after add the movies*/
+  .list .name {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 29px;
+  }
+
+   /* delete icon */
+  .list .delete {
+    width: 45px;
+    float: right;
+    margin: 10px 24px 0 0;
+  }
+
+   /* buttons in the list */
+  .list .button {
+    position: absolute;
+    width: 200px;
+    height: 43px;
+    bottom: 28px;
+    background: #F5F5F5;
+    border: 3px solid #000000;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+   /* click the movie's name in the list, the movie's name*/
+  .detail {
+    text-align: center;
+  }
+
+   /* the movie's poster */
+  .detail img {
+    width: 200px;
+    margin-top: 28px;
+  }
+  /* the movie's name */
+  .detail .name {
+    text-align: center;
+    font-weight: 700;
+    color: #473936;
+    margin-top: 5px;
+  }
+
+  /* the introduction of the movie */
+  .detail .filmIntroduce {
+    margin: 12px auto 90px auto;
+    width: 380px;
+    text-align: left;
+  }
+
+  /* the OK button */
+  .detail .button {
+    position: absolute;
+    bottom: 22px;
+    right: 28px;
+    width: 151px;
+    height: 39px;
+    border: 3px solid #000000;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+    background: #F5F5F5;
+    color: #000000;
+  }
+
+  /* the device apply style */
+  @media (max-width: 480px) {
+    .head {
+      height: 83px;
+    }
+
+    /* buttons */
+    #button-home,
+    #button-list,
+    #button-film {
+      width: 80px;
+      height: 83px;
+      line-height: 83px;
+      font-size: 20px;
+    }
+
+    /* title style in home page */
+    .home .title {
+      width: 100%;
+      margin: 38px 0 0 0;
+      font-size: 32px;
+    }
+
+    /* search part*/
+    .home .search {
+      margin-top: 28px;
+      margin-bottom: 20px;
+      width: 90%;
+    }
+
+    /* search title */
+    .home .text1 {
+      margin-top: 31px;
+      font-size: 26px;
+    }
+
+    /* search content */
+    .home .text2 {
+      width: 185px;
+      margin: 36px auto 0 auto;
+      font-size: 14px;
+    }
+
+    /* input content */
+    .home input {
+      margin: 0 auto;
+      width: 185px;
+      height: 34px;
+      border: 1px 0px 0px 0px;
+      font-size: 32px;
+      line-height: 34px;
+    }
+
+    /* next button */
+    .home .button {
+      margin: 138px 12px 53px 0;
+      width: 112px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    /* film style */
+    .film {
+      margin: 0;
+    }
+
+    /* film page title */
+    .films .title {
+        position: static;
+        color: #B9A5A7;
+        line-height: normal;
+        width: 100%;
+        margin: 38px 0 28px 0;
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    /* poster */
+    .films img {
+      width: 109px;
+      height: 159px;
+      left: 0;
+      top: 0;
+    }
+
+    /* text */
+    .film-right {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    /* star style */
+    .films .star {
+      height: 19px;
+    }
+
+    /* the background of introduction */
+    .films .introduction {
+        padding: 6px 4px 4px 4px;
+        width: 177px;
+        height: 100px;
+        background: #C7C8CC;
+        border-radius: 20px;
+    }
+
+    /* films' introductions text */
+    .introduction-text {
+      height: 61px;
+      -webkit-line-clamp: 5;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    /* score style */
+    .films .score {
+      margin-top: 0px;
+    }
+
+    /* add button style */
+    .films .button {
+      margin-top: 10px;
+      width: 180px;
+    }
+
+    /* list style */
+    .list,
+    .detail {
+      width: 330px;
+      min-height: 540px;
+      right: 0;
+      top: 60px;
+    }
+
+    /* delete icon */
+    .list .delete {
+      width: 40px;
+    }
+
+    /* button in the list */
+    .list .button {
+      width: 92px;
+      height: 27px;
+      font-size: 16px;
+    }
+
+    /* film text */
+    .detail {
+      text-align: center;
+    }
+
+    /* poster */
+    .detail img {
+      width: 129px;
+    }
+
+    /* introduction after click the film name in the list */
+    .detail .filmIntroduce {
+      width: 80%;
+    }
+
+    /* OK button */
+    .detail .button {
+      width: 92px;
+      height: 27px;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }

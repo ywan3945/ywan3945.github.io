@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>document</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <!-- The header -->
+    <div class="head">
+
+      <!-- buttons -->
+      <div id="button-home" class="selected" onclick="choice('home')">Home</div>
+      <div id="button-film" onclick="next('film')">Film</div>
+      <div id="button-list" onclick="showList('list')">List<span style="color: black; font-size: 60px; vertical-align: bottom;">♥</span>
+      </div>
+    </div>
+    
+    <!-- main page-->
+    <div class="main">
+      <!-- home page -->
+      <div class="home">
+        <!-- home page title -->
+        <div class="title">Welcome to Film World!</div>
+
+        <!-- search box -->
+        <div class="search">
+          <!-- input Comedy, China, 2023 -->
+          <div class="text1">Search what you like</div>
+          <div class="text2">Film Types</div>
+          <input type="" name="filmTypes" />
+          <div class="text2">Country</div>
+          <input type="" name="Country" />
+          <div class="text2">Year</div>
+          <input type="" name="Year" />
+
+          <!-- Next button -->
+          <div class="button" onclick="next()">Next</div>
+        </div>
+      </div>
+
+      <div class="films">
+        <div class="title">
+        </div>
+        <!-- all movies' poster, film's name, film's introduction, score, star-->
+        <div class="film-container">
+          <div class="film">
+            <img class="poster" src="images/Full River Red.jpg">
+            <div class="film-right">
+              <div class="film-name">Full River Red</div>
+              <div class="introduction">
+                <div class="introduction-text">
+                  The film chronicles a mystery case set in the beginning era of 
+                  Southern Song dynasty. It is set four years after Yue Fei's 
+                  death (around 1146). A mysterious murder occurs at Qin Hui's 
+                  residence when he meets delegates from the rival Jin Dynasty A 
+                  soldier and a commander become entangled in a large conspiracy 
+                  as one of the Jin envoys perishes and a confidential letter is 
+                  reported missing. Righteous vigilantes are responsible for the 
+                  incident and want to kill a suspected traitor.
+                </div>
+                <div class="score">Score: 7.0</div>
+                <div class="star" style="width: 70%"></div>
+              </div>
+              <!-- add movie button (add to the list)-->
+              <button onclick="addMovie('Full River Red')" class="button">Add</button>
+            </div>
+          </div>
+
+          <div class="film">
+            <img class="poster" src="images/Godspeed.jpg">
+            <div class="film-right">
+              <div class="film-name">Godspeed</div>
+              <div class="introduction">
+                <div class="introduction-text">
+                  A couple goes on a trip with their daughter and her boyfriend 
+                  because of an accident. Although the husband of the couple 
+                  doesn't think much of the boyfriend at first, he finally 
+                  accepts him after a period of time on the road.
+                </div>
+                <div class="score">Score: 6.3</div>
+                <div class="star" style="width: 63%"></div>
+              </div>
+              <!-- add movie button (add to the list)-->
+              <button onclick="addMovie('Godspeed')" class="button">Add</button>
+            </div>
+          </div>
+
+          <div class="film">
+            <img class="poster" src="images/One and Only.jpg">
+            <div class="film-right">
+              <div class="film-name">One and Only</div>
+              <div class="introduction">
+                <div class="introduction-text">
+                  The film ONE AND ONLY shines a spotlight on the journey of a 
+                  nobody in pursuit of his dreams. Chen Shuo, a passionate 
+                  teenager, shoulders the burden of his family, but never gives 
+                  up on the pursuit of his dream. He runs back and forth between 
+                  life and passion, trying to balance between faith and reality, 
+                  and writing a hymn to his youth with his own determined will. 
+                  The film also tells the audience a story of inter-generational 
+                  inheritance: when Ding Lei, a veteran street dancer, meets Chen 
+                  Shuo, a young street dancer, Ding Lei's words "keep working hard 
+                  and you will succeed" rekindle the youngster's faith; and Chen 
+                  Shuo's perseverance and hard work have also restored the initial 
+                  aspiration of this disillusioned street dance veteran. The 
+                  mentoring friendship and the reborn soul of the group bring 
+                  unparalleled strength to the teenager, who leads the members of 
+                  the group with his enthusiasm and fearlessness, to compose 
+                  together a passionate melody of summer with their youth.
+                </div>
+                <div class="score">Score: 7.1</div>
+                <div class="star" style="width: 71%"></div>
+              </div>
+              <!-- add movie button (add to the list)-->
+              <button onclick="addMovie('One and Only')" class="button">Add</button>
+            </div>
+          </div>
+
+          <div class="film">
+            <img class="poster" src="images/Ride On.jpg">
+            <div class="film-right">
+              <div class="film-name">Ride On</div>
+              <div class="introduction">
+                <div class="introduction-text">
+                  Lao Luo is a prolific stuntman who works with his Red Hare, his 
+                  deformed-at-birth stunt horse who he saved from euthanasia. 
+                  His life is falling apart - he had suffered a serious injury 
+                  that sent him bankrupt 8 years ago and lost the custody of his 
+                  daughter, Xiao Bao, after divorcing his late wife while she was 
+                  still young. One night, Lao and Red Hare get into a fight with 
+                  debt collectors and they soon learn Red Hare is at risk of being 
+                  auctioned after their original company went bankrupt. Lao seeks 
+                  legal help from Bao, now a university student studying law, and 
+                  despite being reluctant at first, she offers him the services of 
+                  her boyfriend, Naihua.
+                  Meanwhile, after Lao's fight with the debt collectors goes viral, 
+                  he and Red Hare are hired for several films, with Bao becoming his 
+                  agent ad litem. Although they are able to help each other during 
+                  tough situations, Bao soon expresses discomfort at Lao's stunt work, 
+                  fearing that he and Red Hare might suffer dangerous injuries. After 
+                  Lao embarrasses Bao in front of Naihua's parents, she leaves him in 
+                  disgust. Afterwards, Lao and Red Hare get seriously injured during a 
+                  stunt and as a result, Lao is sent to the hospital. While searching 
+                  Lao's home for an ID card, Bao learns that he has saved CCTV footage 
+                  of a failed meeting he had with her when she was younger. A touched 
+                  Bao reconciles with Lao at the hospital, and Lao promises to stop 
+                  doing stunt work.
+                  On one night, Lao wakes up to witness the debt collectors trying 
+                  to steal Red Hare; after a brief confrontation, he pays his debt 
+                  and invites Dami Ge, the leading debt-collecting thug, to become 
+                  one of his disciples. The next day, Yuanjie, Lao's apprentice, 
+                  invites him for a role in his film which pays homage to stunt 
+                  work - Lao accepts as a final job, to Bao's dismay. Whilst 
+                  filming, Lao insists on performing a dangerous stunt himself, but 
+                  is unable to finish it after remembering Bao's words and quits 
+                  the job. Despite being able to reconcile with Bao once again, Lao 
+                  loses Red Hare's case, and is forced to sell them to a company. 
+                  Refusing to leave them torn apart, Bao and Naihua convince the 
+                  company's CEO, He Xin, to return Red Hare and show him footage of 
+                  Lao's previous stunt work to display his dedication to his work. 
+                  He Xin returns Red Hare to Lao, explaining that he intended to 
+                  return the horse already - Red Hare had attempted to starve 
+                  himself while being owned by the company. He Xin leaves as Lao, 
+                  Bao, and Naihua reunite with Red Hare.
+                </div>
+                <div class="score">Score: 5.9</div>
+                <div class="star" style="width: 59%"></div>
+              </div>
+              <!-- add movie button (add to the list)-->
+              <button onclick="addMovie('Ride On')" class="button">Add</button>
+            </div>
+          </div>
+
+          <div class="film">
+            <img class="poster" src="images/Better Man.jpg">
+            <div class="film-right">
+              <div class="film-name">Better Man</div>
+              <div class="introduction">
+                <div class="introduction-text">
+                  Due to an elevator accident, a steely man accidentally enters 
+                  a "misplaced" world that has turned him from a success master 
+                  into a "full-time househusband". In a world where everyone's 
+                  positions have interchanged, Hu Tie Nan is now a househusband. 
+                  What was once a gathering with his drinking buddies has now 
+                  turned into a beauty competition during afternoon tea. He Tie 
+                  Nan really cannot bear how his life has taken a complete 
+                  one-eighty. Yet there will come a day when he will eventually 
+                  learn to empathise with his wife, to appreciate her silent 
+                  dedication and to learn the true meaning of "love".
+                </div>
+                <div class="score">Score: 4.4</div>
+                <div class="star" style="width: 44%"></div>
+              </div>
+              <!-- add movie button (add to the list)-->
+              <button onclick="addMovie('Better Man')" class="button">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- list page -->
+      <div class="list">
+        <div class="movies">
+        </div>
+        <!-- save button -->
+        <button class="button" style="left: 20px" onclick="save()">Save</button>
+        <!-- delete all button -->
+        <button class="button" style="right: 20px" onclick="deleteAll()">Delete All</button>
+      </div>
+      <!-- the details in the list about the movies -->
+      <div class="detail" style="display: none">
+        <img src="" />
+        <div class="name">Full River Red</div>
+        <div class="filmIntroduce">
+          The film chronicles a mystery case set in the beginning era of Southern Song 
+          dynasty. It is set four years after Yue Fei's death (around 1146). A mysterious 
+          murder occurs at Qin Hui's residence when he meets delegates from the rival Jin 
+          Dynasty A soldier and a commander become entangled in a large conspiracy as one 
+          of the Jin envoys perishes and a confidential letter is reported missing. 
+          Righteous vigilantes are responsible for the incident and want to kill a 
+          suspected traitor.
+        </div>
+        <!-- click OK button, hidden the movie introduction -->
+        <div class="button" onclick="hideMovieDetail()">OK</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
